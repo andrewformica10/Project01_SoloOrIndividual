@@ -53,4 +53,44 @@ nav li a {
     font-size: 1.984vw;
     padding: 5px 20px;
     text-decoration: none;
+    color: blue;
+}
+
+/*Footer*/
+footer {
+    display: flex;
+    flex-wrap: nowrap;
+    background-color: antiquewhite;
+    border: solid 5px black;
+    padding: 1px 1px 1px 5px;
+    margin: 25px;
+    font-size: 1.058vw;
+}
+
+.copyright {
+     width: 15%;
+    color: darkslategray;
+ }
+
+.socials {
+    width: 85%;
+    align-self: center;
+    text-align: right;
+}
+
+.socials ul {
+    list-style-type: none;
+    margin: 0;
+
+}
+
+.socials li {
+    display: inline-block;
+}
+
+.socials li a {
+    display: block;
+    padding: 5px 10px;
+    text-decoration: none;
+    color: blue;
 }
