@@ -1,3 +1,7 @@
+:root {
+    background-color: lightslategray;
+}
+
 /*Banner*/
 .banner {
     display: flex;
@@ -5,7 +9,7 @@
     background-color: antiquewhite;
     border: solid 5px black;
     padding: 10px;
-    margin: 25px;
+    margin: 25px 25px 10px 25px;
 }
 
 .banner > img {
@@ -20,8 +24,33 @@
     text-align: center;
     align-self: center;
     color: darkslategray;
-    font-size: 75px;
+    font-size: 4.96vw;
     width: 75%;
 }
 
 /*Navbar*/
+nav {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    background-color: antiquewhite;
+    border: solid 5px black;
+    padding: 10px;
+    margin: 10px 25px 25px 25px;
+}
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    display: inline-block;
+}
+
+nav li a {
+    display: inline-block;
+    font-size: 1.984vw;
+    padding: 5px 20px;
+    text-decoration: none;
+}
