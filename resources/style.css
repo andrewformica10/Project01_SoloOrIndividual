@@ -33,15 +33,17 @@ nav {
     display: flex;
     flex-wrap: nowrap;
     justify-content: center;
+    text-align: center;
     background-color: antiquewhite;
     border: solid 5px black;
     padding: 10px;
-    margin: 10px 25px 25px 25px;
+    margin: 10px 25px 10px 25px;
 }
 nav ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
+    width: 100%;
 }
 
 nav li {
@@ -56,6 +58,45 @@ nav li a {
     color: blue;
 }
 
+/*Container for sidebar and content*/
+.main {
+    display: flex;
+}
+
+/*Sidebar*/
+.sidebar {
+    float: left;
+    min-width: 25%;
+    max-width: 25%;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    background-color: antiquewhite;
+    border: solid 5px black;
+    padding: 10px;
+    margin: 25px 10px 25px 25px;
+}
+
+.sidebar textarea {
+    max-width: 100%;
+}
+
+.sidebar iframe {
+    width: 100%;
+}
+
+/*Content*/
+.content {
+    float: right;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-grow: 1;
+    background-color: antiquewhite;
+    border: solid 5px black;
+    padding: 10px;
+    margin: 25px 25px 25px 10px;
+}
+
 /*Footer*/
 footer {
     display: flex;
@@ -63,12 +104,13 @@ footer {
     background-color: antiquewhite;
     border: solid 5px black;
     padding: 1px 1px 1px 5px;
-    margin: 25px;
+    margin: 10px 25px 25px 25px;
     font-size: 1.058vw;
+    min-width: 90%;
 }
 
 .copyright {
-     width: 15%;
+    width: 15%;
     color: darkslategray;
  }
 
