@@ -61,6 +61,7 @@ nav li a {
 /*Container for sidebar and content*/
 .main {
     display: flex;
+    height: auto;
 }
 
 /*Sidebar*/
@@ -82,6 +83,7 @@ nav li a {
 }
 
 .sidebar iframe {
+    height: 100%;
     width: 100%;
 }
 
