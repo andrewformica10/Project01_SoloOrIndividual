@@ -90,6 +90,7 @@ nav li a {
     float: right;
     display: flex;
     flex-wrap: nowrap;
+    flex-direction: column;
     flex-grow: 1;
     background-color: antiquewhite;
     border: solid 5px black;
