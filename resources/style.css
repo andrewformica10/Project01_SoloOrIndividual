@@ -99,6 +99,10 @@ nav li a {
     margin: 25px 25px 25px 10px;
 }
 
+.content p {
+    margin: 5px;
+}
+
 /*Footer*/
 footer {
     display: flex;
