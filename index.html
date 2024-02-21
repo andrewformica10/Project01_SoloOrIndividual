@@ -51,7 +51,31 @@
                     <button type="submit" class="btn btn-primary">Submit</button>
             </form>
             <br>
-            <iframe src="//rss.bloople.net/?url=https%3A%2F%2Fapi.foxsports.com%2Fv2%2Fcontent%2Foptimized-rss%3FpartnerKey%3DMB0Wehpmuj2lUhuRhQaafhBjAJqaPU244mlTDK1i%26size%3D30%26tags%3Dfs%2Fsoccer%2Csoccer%2Fepl%2Fleague%2F1%2Csoccer%2Fmls%2Fleague%2F5%2Csoccer%2Fucl%2Fleague%2F7%2Csoccer%2Feuropa%2Fleague%2F8%2Csoccer%2Fwc%2Fleague%2F12%2Csoccer%2Feuro%2Fleague%2F13%2Csoccer%2Fwwc%2Fleague%2F14%2Csoccer%2Fnwsl%2Fleague%2F20%2Csoccer%2Fcwc%2Fleague%2F26%2Csoccer%2Fgold_cup%2Fleague%2F32%2Csoccer%2Funl%2Fleague%2F67&showtitle=false&type=html" height="400" width="400"></iframe>
+
+            <div id="apiDisplay"></div>
+
+            <script>
+                const div = document.getElementById('apiDisplay');
+                const url = 'https://www.scorebat.com/video-api/v3/team/manchester-united';
+
+                const headers = new Headers({
+                    'Accept': 'application/json'
+                });
+
+                fetch(url, {headers})
+                .then((response) => {
+                    return response.json();
+                })
+                .then((data) => {
+                    console.log(data);
+                    let p = document.createElement('p');
+                    p.innerHTML = `${data.value}`
+                    div.appendChild(p);
+                })
+                .catch(function (error) {
+                    console.log(error);
+                });
+            </script>
         </div>
 
         <!--Content-->
