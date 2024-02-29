@@ -139,3 +139,12 @@ footer {
     text-decoration: none;
     color: blue;
 }
+
+/*Table*/
+table td {
+    padding: 25px;
+}
+
+table tr {
+    margin-bottom: 15px;
+}

@@ -10,7 +10,7 @@
     <header>
         <!--Banner-->
         <div class="banner">
-            <img src="resources/headshot.png" alt="Picture of Me.">
+            <img src="resources/images/headshot.png" alt="Picture of Me.">
             <h1>Andrew's Photo Album</h1>
         </div>
 
@@ -97,7 +97,9 @@
                         const row = table.insertRow();
                         const cell1 = row.insertCell(0);
                         const cell2 = row.insertCell(1);
-                        const cell3 = row.insertCell(2);
+
+                        cell1.innerHTML = `<img src="${item.mediaLink}" alt="">`;
+                        cell2.innerHTML = `<h3>${item.title}</h3><p>${item.date}</p><br><p>${item.description}</p>`;
                     });
                 })
                 .catch(function (error) {
