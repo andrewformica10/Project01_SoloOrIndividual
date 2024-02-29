@@ -95,8 +95,19 @@ nav li a {
     margin: 25px 25px 25px 10px;
 }
 
+.content h3 {
+    margin: 5px;
+    font-size: 2.64vw;
+}
+
 .content p {
     margin: 5px;
+    font-size: 1.058vw;
+}
+
+.content img {
+    max-width: 20vw;
+    height: auto;
 }
 
 /*Footer*/

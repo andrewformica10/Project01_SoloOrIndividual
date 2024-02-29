@@ -3,27 +3,13 @@
         "title": "Personal Website",
         "date": "Developed Spring 2024",
         "description": "Created for web programming class, this website is a portfolio of my work and a place to share things about me and some of my experiences.",
-        "mediaLink": "resources/personalWebsiteProject.png"
+        "mediaLink": "resources/images/personalWebsiteProject.png"
     },
 
     {
-        "title": "",
-        "date": "",
-        "description": "",
-        "mediaLink": ""
-    },
-
-    {
-        "title": "",
-        "date": "",
-        "description": "",
-        "mediaLink": ""
-    },
-
-    {
-        "title": "",
-        "date": "",
-        "description": "",
-        "mediaLink": ""
+        "title": "Relational Database",
+        "date": "Developed Spring 2023",
+        "description": "Collaborated to design a relational database based on a property rental database. Populated data and created the database using SQL. Wrote queries for different scenarios based on given prompts",
+        "mediaLink": "resources/images/relationalDatabaseProject.png"
     }
 ]

@@ -79,7 +79,7 @@
 
         <!--Content-->
         <div class="content">
-            <h1>Photo Album</h1>
+            <h1>Project Album</h1>
 
             <table id="photoAlbum"></table>
 
@@ -98,7 +98,7 @@
                         const cell1 = row.insertCell(0);
                         const cell2 = row.insertCell(1);
 
-                        cell1.innerHTML = `<img src="${item.mediaLink}" alt="">`;
+                        cell1.innerHTML = `<img src="${item.mediaLink}" alt="Project Album">`;
                         cell2.innerHTML = `<h3>${item.title}</h3><p>${item.date}</p><br><p>${item.description}</p>`;
                     });
                 })
